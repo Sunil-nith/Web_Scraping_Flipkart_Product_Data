@@ -8,7 +8,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from urllib.parse import urlparse, parse_qs
 
-
 # Define the CSV file containing the product data.
 csv_file = "Products_1.csv" 
 
@@ -32,7 +31,7 @@ for index, row in df.iterrows():
     url = row['Product Url']
     print(index)
 
-     # Configure options for the headless Chrome browser.
+    # Configure options for the headless Chrome browser.
     options = webdriver.ChromeOptions()
     options.add_argument("--headless")
     options.add_argument("--disable-gpu")
@@ -40,7 +39,6 @@ for index, row in df.iterrows():
 
     # Create a new instance of the Chrome driver.
     driver = webdriver.Chrome(options=options)
-
 
     # Use requests and BeautifulSoup to scrape some data from the initial URL.
     request = requests.get(url)
@@ -107,5 +105,5 @@ for index, row in df.iterrows():
     df.at[index, 'FSN'] = pid_value
 
 # Save the updated DataFrame to a new CSV file.
-output_csv_file = "bb.csv"
+output_csv_file = "Products_2.csv"
 df.to_csv(output_csv_file, index=False)
