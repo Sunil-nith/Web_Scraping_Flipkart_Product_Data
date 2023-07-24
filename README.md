@@ -1,4 +1,4 @@
-# Web Scraping Flipkart_Products Data.
+# Web Scraping Flipkart Products Data.
 
 * This project is a web scraping tool to extract product data from Flipkart's search results for a specific search query. 
 * It retrieves product information, such as product URLs, names, prices, ratings, and the number of reviews from multiple pages of search results. 
@@ -51,12 +51,12 @@ Before running the application, make sure you have the following prerequisites i
 
 1. Open the web_scraping_1.py file.
 2. In the url variable, update the search query (e.g., bags) to the desired product category you want to scrape.
-3. In the page range, update the number of pages you want to scrape (e.g., 20).
+3. In the Pages_to_scrape variable, update the number of pages you want to scrape (e.g., 20).
 4. Run the web_scraping_1.py script using Python.
 5. This script will scrape product data from the specified number of pages and save the basic product data (name, price, URL) to a CSV file named Products_1.csv.
 6. Now Open the web_scraping_2.py file.
 7. Run the web_scraping_2.py script using Python.
-8. The script will read the basic product data from the  Products_1.csv file, visit each product URL, fetch additional product details (e.g., description, ASIN, manufacturer), and update the CSV file with the additional information to a CSV file named Product_2.csv.
+8. The script will read the basic product data from the  Products_1.csv file, visit each product URL, fetch additional product details (e.g., description, ASIN, manufacturer), and update the CSV file with the additional information to a CSV file named Product_2.csv
 
 
 ## Contributing

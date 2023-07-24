@@ -11,8 +11,10 @@ Prices =[]
 Rating=[]
 Num_review=[]
 
+Pages_to_scrape=20
+
 # Loop through the pages to scrape the data
-for page in range(1,21):
+for page in range(1,Pages_to_scrape+1):
 
     headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
