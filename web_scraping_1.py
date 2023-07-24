@@ -49,14 +49,12 @@ for page in range(1,Pages_to_scrape+1):
             price = Product.find("div", class_ = "_30jeq3 _1_WHN1").text.strip()
         except:
             price = " "
-
         Prices.append(price)
 
         try:
             rating = Product.find("div", class_ = "_3LWZlK").text.strip()
         except:
             rating = "Not Available"
-
         Rating.append(rating)
 
         try:
